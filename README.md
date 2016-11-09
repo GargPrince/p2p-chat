@@ -14,14 +14,18 @@ To use it, you need Node.js, npm and postman.
 
 	- You can change the app port from the server.js third line.
 
-## How to use :
+## Create user : 
 
-  - Create different users with postman and mongo db schema. Sample user from which you can create new user via postman in mongoDB:
-    name: Prince,
-    uname: GargPrince,
-    password: prince,
-    friends: [Jatin, Jolly]
-  
-  - Schema can be found in app/models/user.js
+	- Send a POST request to http://localhost:3000/signup via postman. Sample user:
+
+	{
+		name: Prince,
+		uname: GargPrince,
+		password: prince,
+		friends: [Jatin, Jolly]
+  	}
+
+
+## How to use :
 	
-  - node server.js
+	- node server.js
